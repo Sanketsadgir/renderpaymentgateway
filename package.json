@@ -3,6 +3,19 @@
   "version": "1.0.0",
   "private": true,
   "description": "Choose-your-amount INR checkout with Razorpay",
-  "scripts": { "start": "node server.js" },
-  "engines": { "node": ">=18" }
+  "scripts": {
+    "db:generate": "drizzle-kit generate"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@netlify/database": "^2.0.1",
+    "@netlify/functions": "^6.0.2",
+    "drizzle-orm": "^1.0.0-beta.22"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^1.0.0-beta.22"
+  },
+  "type": "module"
 }
